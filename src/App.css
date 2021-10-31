@@ -1,0 +1,122 @@
+.container {
+  background-color: rgb(49, 46, 46);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pcard-container{
+  background-color: hsl(233, 47%, 7%);
+  width: 70%;
+  height: 82vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card1 {
+  background-color: hsl(244, 38%, 16%);
+  width: 32%;
+  height: 50vh;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.heading {
+  color: hsl(0, 0%, 100%);
+  font-family: url(https://fonts.google.com/specimen/Inter);
+  font-weight: 400, 700;
+  font-size: 25px;
+}
+.header{
+  color: hsl(277, 64%, 61%);
+}
+.pera{
+   color:  hsla(0, 0%, 100%, 0.75);
+   font-family: url(https://fonts.google.com/specimen/Lexend+Deca);
+   font-weight: 400;
+   font-size: 13px;
+}
+.table-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 45px;
+}
+.table{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+
+}
+.topLabel{
+  color: hsl(0, 0%, 100%);
+  font-size: 18px;
+}
+.label{
+  color: hsla(0, 0%, 100%, 0.75);
+  font-size: 8px;
+}
+.card2 {
+  width: 40%;
+  height: 50vh;
+  background-size: cover, cover;
+  background-image: url(./Components/assets/images/image-header-desktop.jpg);
+  object-fit: cover;
+   
+   /* width: 40%;
+   height: 50vh;
+   background-size: cover;
+   object-fit: contain;
+  
+  background: 
+    linear-gradient(
+      rgb(170, 92, 219, 0.7), 
+      rgb(170, 92, 219, 0.7)
+    ),
+    url(./Components/assets/images/image-header-desktop.jpg); */
+
+}
+
+@media screen and (min-width: 300px) and (max-width: 800px) {
+  .container{
+    flex-direction: column;
+    width: 100%;
+  height: 150vh;
+  }
+  .pcard-container{
+    flex-direction: column-reverse;
+    width: 100%;
+  height: 150vh;
+
+  }
+  .card1{
+    width: 80%;
+    height: 130vh
+  }
+  .card2{
+    width: 80%;
+    height: 30vh;
+    margin-top: 30px
+  }
+  .heading{
+    font-size: 28px;
+    text-align: center;
+  }
+  .pera{
+    text-align: center;
+    font-size: 16px;
+  }
+  .table-container{
+    flex-direction: column;
+  }
+  .topLabel{
+    font-size: 22px;
+    margin-top: 25px
+  }
+  .label{
+    font-size: 14px;
+  }
+}
+
+
